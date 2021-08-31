@@ -9,7 +9,6 @@ import UIKit
 import SungminExtensions
 
 open class SMTabPageViewController: UIViewController {
-    
     var tabScrollContainerViewHeight: CGFloat = 50.0
     var tabTitleFontSize: CGFloat = 15.0
     var tabTitleHorizontalInset: CGFloat = 11.0
@@ -17,7 +16,7 @@ open class SMTabPageViewController: UIViewController {
     var tabHorizontalMargin: CGFloat = 10
     var tabIndicatorHeight: CGFloat = 3.0
     var indicatorHorizontalMargin: CGFloat = 3.0
-    var highlightColor: UIColor = UIColor(hex: "#2AC1BC")
+    var highlightColor: UIColor = UIColor(hex: "#2AC1BC") ?? .systemPink
 
     weak var scrollDelegate: SMPageViewControllerDelegate?
     
