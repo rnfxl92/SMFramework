@@ -69,6 +69,8 @@ open class SMTabPageViewController: UIViewController {
         tabScrollView.alwaysBounceHorizontal = true
         tabScrollView.delegate = self
         tabScrollView.clipsToBounds = false
+        tabScrollView.showsVerticalScrollIndicator = false
+        tabScrollView.showsHorizontalScrollIndicator = false
     }
     
     open override func viewWillAppear(_ animated: Bool) {
