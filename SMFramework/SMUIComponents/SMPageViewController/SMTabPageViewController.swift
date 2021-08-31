@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SungminExtensions
 
 open class SMTabPageViewController: UIViewController {
     
@@ -251,7 +252,7 @@ extension SMTabPageViewController {
     }
     
     public func getCurrentViewController() -> UIViewController? {
-        return getContentViewController(getContentIndex())
+        return getContentViewController(getCurrentIndex())
     }
     
     public func getContentViewController(_ index: Int) -> UIViewController? {

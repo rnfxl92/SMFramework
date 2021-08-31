@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SungminExtensions
 
 protocol SMPageViewControllerDelegate: AnyObject {
     func indexMoved(_ index: Int, viewController: UIViewController)
