@@ -11,11 +11,11 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "SungminExtensions",
-            targets: ["SungminExtensions"]),
-        .library(
             name: "SMUIComponents",
             targets: ["SMUIComponents"]),
+        .library(
+            name: "SungminExtensions",
+            targets: ["SungminExtensions"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
