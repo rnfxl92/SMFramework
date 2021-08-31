@@ -8,13 +8,15 @@
 import Foundation
 
 /// 순서를 가지는 String Dictinoary
-class LinkedDictionary {
+open class LinkedDictionary {
 
     fileprivate var keySet: [String] = [String]()
     fileprivate var values: [String: Any] = [String: Any]()
     
     var count: Int { keySet.count }
 
+    public init() { }
+    
     /**
     키/값 쌍을 Dictionary에 추가한다
     
@@ -23,7 +25,7 @@ class LinkedDictionary {
     */
     
     @discardableResult
-    func addValue(_ key: String, value: Any) -> LinkedDictionary {
+    public func addValue(_ key: String, value: Any) -> LinkedDictionary {
         if !keySet.contains(key) {
             self.keySet.append(key)
         }
@@ -37,7 +39,7 @@ class LinkedDictionary {
     - parameter key: 키
     */
     @discardableResult
-    func removeValueForKey(_ key: String) -> Any? {
+    public func removeValueForKey(_ key: String) -> Any? {
         if let index = keySet.firstIndex(of: key) {
             keySet.remove(at: index)
             return values.removeValue(forKey: key)
@@ -53,7 +55,7 @@ class LinkedDictionary {
     
     - returns: 반환값
     */
-    func getValue(_ key: String) -> AnyObject {
+    public func getValue(_ key: String) -> AnyObject {
         if let value = values[key] {
             return value as AnyObject
         } else {
@@ -61,7 +63,7 @@ class LinkedDictionary {
         }
     }
     
-    func getCompleteDictionoary() -> [String: AnyObject] {
+    public func getCompleteDictionoary() -> [String: AnyObject] {
         return values as [String: AnyObject]
     }
     
@@ -70,7 +72,7 @@ class LinkedDictionary {
     
     - returns: Dictionary 카운트
     */
-    func getCount() -> Int {
+    public func getCount() -> Int {
         return keySet.count
     }
     
@@ -81,7 +83,7 @@ class LinkedDictionary {
     
     - returns: 매개변수로 넘겨준 인덱스에 해당하는 키
     */
-    func getKeyAtIndexOf(_ index: Int) -> String? {
+    public func getKeyAtIndexOf(_ index: Int) -> String? {
         return keySet[safe: index]
     }
         
@@ -92,7 +94,7 @@ class LinkedDictionary {
     
     - returns: 매개변수로 넘겨준 인덱스에 해당하는 값
     */
-    func getItemAtIndexOf(_ index: Int) -> AnyObject? {
+    public func getItemAtIndexOf(_ index: Int) -> AnyObject? {
         if index < keySet.count {
             let key: String = keySet[index]
             return values[key]! as AnyObject
@@ -108,7 +110,7 @@ class LinkedDictionary {
      
      - returns: 매개변수로 넘겨준 값에 해당하는 인덱스
      */
-    func getIndexOfItem(_ value: AnyObject) -> Int? {
+    public func getIndexOfItem(_ value: AnyObject) -> Int? {
         for key in self.keySet {
             if let ext = self.values[key] {
                 if value.isEqual(ext) {
@@ -126,7 +128,7 @@ class LinkedDictionary {
      
      - returns: 매개변수로 넘겨준 값에 해당하는 인덱스
      */
-    func getIndexOfKey(_ key: String) -> Int? {
+    public func getIndexOfKey(_ key: String) -> Int? {
         return self.keySet.firstIndex(of: key)
     }
     
@@ -135,7 +137,7 @@ class LinkedDictionary {
      
      - returns: 키셋
      */
-    func getKeys() -> [String] {
+    public func getKeys() -> [String] {
         return self.keySet
     }
     
@@ -144,7 +146,7 @@ class LinkedDictionary {
      
      - returns: 값 배열
      */
-    func getValues() -> [AnyObject] {
+    public func getValues() -> [AnyObject] {
         var values: [AnyObject] = []
         for key in self.keySet {
             if let ext = self.values[key] {
@@ -157,7 +159,7 @@ class LinkedDictionary {
     /**
      Dictionary의 모든 항목을 제거한다
      */
-    func removeAll() {
+    public func removeAll() {
         self.keySet.removeAll()
         self.values.removeAll()
     }
