@@ -26,12 +26,12 @@ open class SMTabPageViewController: UIViewController {
     private var tabIndicatorView: UIView?
     private var initialized: Bool = false
     
-    @IBOutlet weak var tabScrollContainerView: UIView!
-    @IBOutlet weak var tabScrollHairlineView: UIView!
-    @IBOutlet weak var tabScrollContainerViewHeightConst: NSLayoutConstraint!
-    @IBOutlet weak var tabScrollViewWidthConst: NSLayoutConstraint!
-    @IBOutlet weak var tabScrollView: UIScrollView!
-    @IBOutlet weak var pageViewControllerContainerView: UIView!
+    @IBOutlet private weak var tabScrollContainerView: UIView!
+    @IBOutlet private weak var tabScrollHairlineView: UIView!
+    @IBOutlet private weak var tabScrollContainerViewHeightConst: NSLayoutConstraint!
+    @IBOutlet private weak var tabScrollViewWidthConst: NSLayoutConstraint!
+    @IBOutlet private weak var tabScrollView: UIScrollView!
+    @IBOutlet private weak var pageViewControllerContainerView: UIView!
     
     public init() {
         super.init(nibName: "SMTabPageViewController", bundle: Bundle.module)
