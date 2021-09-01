@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		345862BF26DF0A5F005F6456 /* CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345862BE26DF0A5F005F6456 /* CollectionExtensions.swift */; };
 		347CF79026DDD46400C1C4E6 /* SMFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347CF78626DDD46300C1C4E6 /* SMFramework.framework */; };
 		347CF79526DDD46400C1C4E6 /* SMFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347CF79426DDD46400C1C4E6 /* SMFrameworkTests.swift */; };
 		347CF79726DDD46400C1C4E6 /* SMFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 347CF78926DDD46300C1C4E6 /* SMFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		345862BE26DF0A5F005F6456 /* CollectionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtensions.swift; sourceTree = "<group>"; };
 		347CF78626DDD46300C1C4E6 /* SMFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SMFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		347CF78926DDD46300C1C4E6 /* SMFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMFramework.h; sourceTree = "<group>"; };
 		347CF78A26DDD46300C1C4E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				347CF7A426DDD4CE00C1C4E6 /* LinkedDictionary.swift */,
 				347CF7A526DDD4CE00C1C4E6 /* AnyNameable.swift */,
 				347CF7A626DDD4CE00C1C4E6 /* UIColorExtensions.swift */,
+				345862BE26DF0A5F005F6456 /* CollectionExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				347CF7B426DDD4CE00C1C4E6 /* SMTabPageViewController.swift in Sources */,
 				347CF7AE26DDD4CE00C1C4E6 /* ArrayExtensions.swift in Sources */,
 				347CF7B026DDD4CE00C1C4E6 /* AnyNameable.swift in Sources */,
+				345862BF26DF0A5F005F6456 /* CollectionExtensions.swift in Sources */,
 				347CF7B726DDD58400C1C4E6 /* Package.swift in Sources */,
 				347CF7B326DDD4CE00C1C4E6 /* SMPageViewController.swift in Sources */,
 				347CF7B226DDD4CE00C1C4E6 /* SungminLogger.swift in Sources */,
